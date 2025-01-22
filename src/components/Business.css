@@ -1,0 +1,29 @@
+
+
+.Business {
+    max-width: 300px;
+    overflow: hidden;
+    max-height: 500px;
+    background-color: #FFFBF0;
+
+}
+
+.Business img {
+    max-width: 100%;
+}
+.Business h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant-info ul {
+    list-style: none;
+}
+.restaurant-info li {
+    font-size: 0.9rem;
+}

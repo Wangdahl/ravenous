@@ -1,5 +1,6 @@
 import Business from "./Business";
 import PropTypes from "prop-types";
+import './BusinessList.css'
 
 
 const BusinessList = ({businesses}) => (
