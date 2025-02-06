@@ -1,0 +1,42 @@
+
+
+
+.filterList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: thin solid #FFFBF0;
+    max-width: fit-content;
+    justify-self: center;
+    margin: 1.5rem;
+}
+li {
+    color: #FFFBF0;
+    font-size: 0.8rem;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+li:hover {
+    cursor: pointer;
+}
+
+li.active {
+    color: #FFDB58;
+    border-radius: 50%;
+}
+
+/* Button */
+.SearchButton button{
+    background: transparent;
+    color: #FFFBF0;
+    border: thin solid #FFFBF0;
+    margin: 1rem;
+    transition: 0.2s;
+}
+.SearchButton button:hover {
+    color: #FFDB58;
+    border-color: #FFDB58;
+}

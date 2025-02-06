@@ -27,16 +27,16 @@ const Business = (props) => (
 
 Business.propTypes = {
     business: PropTypes.shape({
-      imageSrc: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      address: PropTypes.string,
-      city: PropTypes.string,
-      state: PropTypes.string,
-      zipCode: PropTypes.string,
-      category: PropTypes.string,
-      rating: PropTypes.number,
-      reviewCount: PropTypes.number,
+        imageSrc: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        address: PropTypes.string,
+        city: PropTypes.string,
+        state: PropTypes.string,
+        zipCode: PropTypes.string,
+        category: PropTypes.string,
+        rating: PropTypes.number,
+        reviewCount: PropTypes.number,
     }).isRequired
-  };
+};
 
 export default Business;
