@@ -8,12 +8,18 @@ import {useState} from 'react'
 
 function App() {
   const [businesses, setBusinesses] = useState([]);
+  const [loading, setLoading] = useState(false); //Setting up a state for loading
 
   const searchYelp = (searchTerm, location, sortBy) => {
+    setLoading(true); // Start loading
     Yelp.search(searchTerm, location, sortBy).then(businesses => {
       console.log('Businesses:', businesses);
       setBusinesses(businesses || []);
-    })
+      setLoading(false); //Stop loading
+    }).catch(error => {
+      console.error(error);
+      setLoading(false); // Stop loading if error occurs
+    });
   }
 
   return (
@@ -27,7 +33,11 @@ function App() {
           <SearchBar searchYelp={searchYelp} />
         </section>
         <section className='displayArea'>
-        <BusinessList businesses={businesses}/>
+        {loading ? (
+            <div className="loadingIndicator"></div>
+          ) : (
+            <BusinessList businesses={businesses} />
+          )}
         </section>
       </main>
     </div>

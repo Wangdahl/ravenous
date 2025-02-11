@@ -40,3 +40,18 @@ li.active {
     color: #FFDB58;
     border-color: #FFDB58;
 }
+.SearchButton button:active {
+    transform: scale(1.1);
+}
+
+/* Highlight input border in red when error is active */
+input.error {
+    border: 1px solid red;
+}
+
+  /* Style the error message */
+.errorMessage {
+    color: red;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
