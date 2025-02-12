@@ -5,7 +5,6 @@ const apiKey =
 const Yelp = {
     async search(searchTerm, location, sortBy) {
         //Creating url
-        //const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         const endpoint = `https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&sort_by=${sortBy}`;
         const url = endpoint;
 

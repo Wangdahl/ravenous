@@ -1,6 +1,6 @@
 
 
-
+/* Styling for the 3 filters (built in a ul) */
 .filterList {
     list-style: none;
     display: flex;
@@ -27,6 +27,16 @@ li.active {
     color: #FFDB58;
     border-radius: 50%;
 }
+/* Styling to ensure that the user inputs a location */
+input.error {
+    border: 1px solid red;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
 
 /* Button */
 .SearchButton button{
@@ -44,14 +54,27 @@ li.active {
     transform: scale(1.1);
 }
 
-/* Highlight input border in red when error is active */
-input.error {
-    border: 1px solid red;
+.SearchFields {
+    max-width: 100%;
 }
-
-  /* Style the error message */
-.errorMessage {
-    color: red;
-    font-size: 0.7em;
-    margin-top: 10px;
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .searchBanner input {
+        max-width: 90%;
+        font-size: 0.7rem;
+    }
+    .searchBanner input::placeholder {
+        font-size: 0.7rem;
+    }
+    .SearchButton button{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 280px) {
+    .filterList {
+        gap: 1rem;
+    }
+    li {
+        font-size: 0.7rem;
+    }
 }

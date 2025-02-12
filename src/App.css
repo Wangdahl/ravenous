@@ -1,14 +1,13 @@
 
 
-h1 {
-  font-size: 1.8rem;
-  padding-bottom: 0.2rem;
-}
-
 /* Header styling */
 header {
   text-align: center;
   background-color: #FFDB58;
+}
+h1 {
+  font-size: 1.8rem;
+  padding-bottom: 0.2rem;
 }
 
 /* Search bar / banner */
@@ -39,6 +38,22 @@ header {
   border-radius: 3px;
 }
 
+.SearchBar {
+  max-width: 100%;
+}
+/* Mobile styling */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .searchBanner input {
+      max-width: 90%;
+      min-width: 200px;
+  }
+  .searchBanner h2 {
+    font-size: 1.2rem;
+  }
+}
 
 /* Restaurant display area */
 .displayArea {

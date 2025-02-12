@@ -43,3 +43,9 @@
     font-size: 0.9rem;
     color: black;
 }
+
+@media (max-width: 480px) {
+    .restaurant-info li, .restaurant-info h3{
+        font-size: 0.8rem;
+    }
+}
